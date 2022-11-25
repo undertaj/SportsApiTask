@@ -1,6 +1,9 @@
 
+import 'package:api_task_lisha/pages/TableScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:api_task_lisha/pages/HomeScreen.dart';
+
+import 'Widgets/MyRoutes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,9 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const appTitle = 'Demo';
+    const appTitle = 'League 39';
 
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: appTitle,
       home: MyHomePage(title: appTitle),
     );
